@@ -56,6 +56,10 @@ circumference' r = 2 * pi * r
     ghci> :t maxBound 
     maxBound :: Bounded a => a
 
+    ghci> :t fromIntegral
+    fromIntegral :: (Integral a, Num b) => a -> b
+
+
 -}
 
 
