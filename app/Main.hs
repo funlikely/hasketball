@@ -1,12 +1,12 @@
 module Main where
   
---import qualified MyLib (someFunc)
+import qualified MyLib (someFunc)
 
 main :: IO ()
 main = do
-  putStrLn "Hello, Haskell!"
-  putStrLn "Hello, World!"
-  --MyLib.someFunc
+  -- putStrLn "Hello, Haskell!"
+  -- putStrLn "Hello, World!"
+  MyLib.someFunc
 
 doubleMe x = x + x
 
