@@ -63,6 +63,35 @@ numLongChains' n m = length (filter isLong (map chain (takeWhile (< n) [1..])))
     1300
 -}
 
+-- Folds . . . 
+
+-- example from book
+sum' :: (Num a) => [a] -> a
+sum' xs = fold' (\acc x -> acc + x) 0 xs
+
+-- or
+-- sum' = foldl (+_) 0
+
+-- example from book
+elem' :: (Eq a) => a -> [a] -> Bool
+elem' y ys = foldl (\acc x -> if x == y then True else acc) False ys
+
+-- The type, for 'foldl' :
+-- ghci> :t foldl
+-- foldl :: Foldable t => (b -> a -> b) -> b -> t a -> b
+
+-- example from book
+map' :: (a -> b) -> [a] -> [b]
+map' f xs = foldr (\x acc -> f x : acc) [] xs
+
+
+
+
+
+
+
+
+
 
 
 
