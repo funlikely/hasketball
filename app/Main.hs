@@ -6,6 +6,7 @@ main :: IO ()
 main = do
   putStrLn "Hello, Haskell!"
   putStrLn "Hello, World!"
+  showOperators
   --MyLib.someFunc
 
 doubleMe x = x + x
