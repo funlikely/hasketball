@@ -1,6 +1,7 @@
 module Main where
   
 import qualified MyLib (someFunc)
+import qualified RomanNumeral (numeralize)
 
 -------------------------
 -- runs with "haskell(stack)" debug profile
@@ -9,9 +10,11 @@ import qualified MyLib (someFunc)
 main :: IO ()
 main = do
   putStrLn "Hello, Haskell!"
-  putStrLn "Hello, World!"
   showOperators
   MyLib.someFunc
+  putStrLn $ RomanNumeral.numeralize 3
+  -- putStrLn $ ([(show x ++ ": ") | x <- [0..11]])
+  -- putStrLn [show x ++ ": " ++ (RomanNumeral.numeralize x) | x <- [0..11]]
 
 doubleMe x = x + x
 
