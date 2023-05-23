@@ -13,8 +13,8 @@ main = do
   showOperators
   MyLib.someFunc
   putStrLn $ RomanNumeral.numeralize 3
-  -- putStrLn $ ([(show x ++ ": ") | x <- [0..11]])
-  -- putStrLn [show x ++ ": " ++ (RomanNumeral.numeralize x) | x <- [0..11]]
+  putStrLn $ show ([(show x ++ ": ") | x <- [0..11]])
+  putStrLn $ show [show x ++ ": " ++ (RomanNumeral.numeralize x) | x <- [0..11]]
 
 doubleMe x = x + x
 
