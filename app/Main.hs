@@ -1,13 +1,17 @@
 module Main where
   
---import qualified MyLib (someFunc)
+import qualified MyLib (someFunc)
+
+-------------------------
+-- runs with "haskell(stack)" debug profile
+-------------------------
 
 main :: IO ()
 main = do
   putStrLn "Hello, Haskell!"
   putStrLn "Hello, World!"
   showOperators
-  --MyLib.someFunc
+  MyLib.someFunc
 
 doubleMe x = x + x
 
