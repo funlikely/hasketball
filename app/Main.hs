@@ -4,7 +4,7 @@ import qualified MyLib (someFunc)
 import qualified RomanNumeral (numeralize)
 
 -------------------------
--- runs with "haskell(stack)" debug profile
+-- runs with "haskell(stack)" debug profile --
 -------------------------
 
 main :: IO ()
